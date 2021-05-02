@@ -27,12 +27,10 @@ public class controladorMenusTutorialWaiter : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        ranking = GameObject.Find("RankingTutorial");
-        ranking.SetActive(false);
         savedText = GameObject.Find("SavingGameTextTutorial");
         pauseMenu = GameObject.Find("PauseMenuWaiterTutorial");
         pauseMenu.SetActive(false);
-        achievementsMenu = GameObject.Find("LogrosWaiterTutorial");
+        achievementsMenu = GameObject.Find("AchievementsWaiterTutorial");
         achievementsMenu.SetActive(false);
 
         textScreenWaiter = GameObject.Find("messageTextWaiterTutorial");

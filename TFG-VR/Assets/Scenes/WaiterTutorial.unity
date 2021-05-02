@@ -3907,7 +3907,7 @@ GameObject:
   - component: {fileID: 556415839}
   - component: {fileID: 556415838}
   m_Layer: 0
-  m_Name: LogrosWaiterTutorial
+  m_Name: AchievementsWaiterTutorial
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14522,7 +14522,7 @@ GameObject:
   - component: {fileID: 1945066674}
   - component: {fileID: 1945066673}
   m_Layer: 0
-  m_Name: Button (1)
+  m_Name: SavingGameTextTutorial
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

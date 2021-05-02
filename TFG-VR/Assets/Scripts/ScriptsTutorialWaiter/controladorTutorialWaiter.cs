@@ -10,17 +10,14 @@ public class controladorTutorialWaiter : MonoBehaviour
     private OVRPlayerController player;
 
 
-    private int iterTutorial;
+    private int iterTutorial = 0;
 
     private controladorMenusTutorialWaiter controllerMenus;  // Clase controladora de los menús (entrar para ver mayor descripción). 
 
-    private Subject subject = new Subject();
-    private AchievementsController achievementsController;
     // SINGLETON
     public static controladorTutorialWaiter current;
     private UserController userControl;
 
-    private bool isDayStarted;
     private bool gamePaused;
 
     private GameObject Panel1;
@@ -37,10 +34,6 @@ public class controladorTutorialWaiter : MonoBehaviour
 
 
         controllerMenus = this.GetComponentInParent<controladorMenusTutorialWaiter>();
-
-        achievementsController = new AchievementsController();
-        subject.AddObserver(achievementsController);
-
         this.userControl = GameObject.Find("UserControl").GetComponent<UserController>();
 
 
@@ -53,7 +46,7 @@ public class controladorTutorialWaiter : MonoBehaviour
         Panel2.SetActive(false);
 
         Panel3 = GameObject.Find("Panel3");
-        Panel3.SetActive(false); ;
+        //Panel3.SetActive(false); 
     }
 
     // Update is called once per frame
@@ -86,6 +79,7 @@ public class controladorTutorialWaiter : MonoBehaviour
         {
             if (iterTutorial == 0)
             {
+                Panel3.SetActive(false); 
                 controllerMenus.setText("You can move around using joystick. Left one to move, and right one to control the camera.");
                 controllerMenus.showImage("MovementJoystick");
                 iterTutorial++;

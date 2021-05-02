@@ -326,12 +326,6 @@ public class controladorPartidaChef : MonoBehaviour
             this.userControl.setFiftyOrderChefAchievement(true);
 
         }
-        if (this.userControl.getNumOrdersChef() == 75 && !this.userControl.getSeventyfiveOrdersChefAchievement())
-        {
-            //Activating 75 orders achievement
-            this.userControl.setSeventyfiveOrdersChefAchievement(true);
-
-        }
         else if (this.userControl.getNumOrdersChef() == 100 && !this.userControl.getHundredOrdersChefAchievement())
         {
             //Activating 100 orders achievement
@@ -359,12 +353,6 @@ public class controladorPartidaChef : MonoBehaviour
             //Activating 25 basic orders achievement
 
         }
-        else if(this.userControl.getNumBasicOrdersChef() == 40 && !this.userControl.getFourtyBasicOrdersChefAchievement()){
-
-            this.userControl.setFourtyBasicOrdersChefAchievement(true);
-            //Activating 40 basic orders achievement
-
-        }
 
         else if (this.userControl.getNumConditionalOrdersChef() == 1 && !this.userControl.getFirstConditionalOrderChefAchievement())
         {
@@ -378,13 +366,6 @@ public class controladorPartidaChef : MonoBehaviour
 
             this.userControl.setTenConditionalOrdersChefAchievement(true);
             //Activating 10 conditional orders achievement
-
-        }
-        else if (this.userControl.getNumConditionalOrdersChef() == 30 && !this.userControl.getThirtyConditionalOrdersChefAchievement())
-        {
-
-            this.userControl.setThirtyConditionalOrdersChefAchievement(true);
-            //Activating 30 conditional orders achievement
 
         }
         else if (this.userControl.getNumConditionalOrdersChef() == 50 && !this.userControl.getFiftyConditionalOrdersChefAchievement())

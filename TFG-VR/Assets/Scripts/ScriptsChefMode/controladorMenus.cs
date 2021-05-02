@@ -84,10 +84,6 @@ public class controladorMenus: MonoBehaviour
         {
             this.achievementsMenu.transform.GetChild(0).transform.GetChild(0).transform.GetChild(3).transform.GetChild(1).GetComponent<Image>().color = Color.white;
         }
-        if (achievements.getSeventyfiveOrdersChefAchievement())
-        {
-            this.achievementsMenu.transform.GetChild(0).transform.GetChild(0).transform.GetChild(4).transform.GetChild(1).GetComponent<Image>().color = Color.white;
-        }
         if (achievements.getHundredOrdersChefAchievement())
         {
             this.achievementsMenu.transform.GetChild(0).transform.GetChild(0).transform.GetChild(5).transform.GetChild(1).GetComponent<Image>().color = Color.white;
@@ -99,10 +95,6 @@ public class controladorMenus: MonoBehaviour
         if (achievements.getTenConditionalOrdersChefAchievement())
         {
             this.achievementsMenu.transform.GetChild(0).transform.GetChild(0).transform.GetChild(7).transform.GetChild(1).GetComponent<Image>().color = Color.white;
-        }
-        if (achievements.getThirtyConditionalOrdersChefAchievement())
-        {
-            this.achievementsMenu.transform.GetChild(0).transform.GetChild(0).transform.GetChild(8).transform.GetChild(1).GetComponent<Image>().color = Color.white;
         }
         if (achievements.getFiftyConditionalOrdersChefAchievement())
         {
@@ -124,10 +116,6 @@ public class controladorMenus: MonoBehaviour
         {
             this.achievementsMenu.transform.GetChild(0).transform.GetChild(1).transform.GetChild(2).transform.GetChild(1).GetComponent<Image>().color = Color.white;
 
-        }
-        if (achievements.getFourtyBasicOrdersChefAchievement())
-        {
-            this.achievementsMenu.transform.GetChild(0).transform.GetChild(1).transform.GetChild(3).transform.GetChild(1).GetComponent<Image>().color = Color.white;
         }
 
         if (achievements.getFirstConditionalIfOrderChefAchievement())

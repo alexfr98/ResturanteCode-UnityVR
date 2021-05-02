@@ -621,13 +621,7 @@ public class GameControllerWaiter : MonoBehaviour
                     hatTv.GetComponent<MeshRenderer>().material = Resources.Load<Material>("Materials/blue");
                     //Activar logro 20 comandas normales
                 }
-                else if (this.userControl.getNumBasicOrdersWaiter() == 40 && !this.userControl.getFourtyBasicOrdersWaiterAchievement())
-                {
-                    this.userControl.setFourtyBasicOrdersWaiterAchievement(true);
-                    controllerMenus.orderMenuWaiter("Success! Achievement Unlocked: Fourty Basic Orders Done! Congratulations, keep going on");
-                    controllerMenus.showImageBig(true, "LogroNormal3");
-                    //Activar logro 40 comandas normales
-                }
+
                 else if (this.userControl.getNumConditionalIfOrdersWaiter() == 1 && !this.userControl.getFirstConditionalIfOrderWaiterAchievement())
                 {
                     this.userControl.setFirstConditionalIfOrderWaiterAchievement(true);

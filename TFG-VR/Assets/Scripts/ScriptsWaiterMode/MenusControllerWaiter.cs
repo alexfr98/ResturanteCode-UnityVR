@@ -101,10 +101,6 @@ public class MenusControllerWaiter : MonoBehaviour
         {
             this.achievementsMenu.transform.GetChild(0).transform.GetChild(0).transform.GetChild(3).transform.GetChild(1).GetComponent<Image>().color = Color.white;
         }
-        if (achievements.getSeventyfiveOrdersWaiterAchievement())
-        {
-            this.achievementsMenu.transform.GetChild(0).transform.GetChild(0).transform.GetChild(4).transform.GetChild(1).GetComponent<Image>().color = Color.white;
-        }
         if (achievements.getHundredOrdersWaiterAchievement())
         {
             this.achievementsMenu.transform.GetChild(0).transform.GetChild(0).transform.GetChild(5).transform.GetChild(1).GetComponent<Image>().color = Color.white;
@@ -141,10 +137,6 @@ public class MenusControllerWaiter : MonoBehaviour
         {
             this.achievementsMenu.transform.GetChild(0).transform.GetChild(1).transform.GetChild(2).transform.GetChild(1).GetComponent<Image>().color = Color.white;
 
-        }
-        if (achievements.getFourtyBasicOrdersWaiterAchievement())
-        {
-            this.achievementsMenu.transform.GetChild(0).transform.GetChild(1).transform.GetChild(3).transform.GetChild(1).GetComponent<Image>().color = Color.white;
         }
 
         if (achievements.getFirstConditionalIfOrderWaiterAchievement())
