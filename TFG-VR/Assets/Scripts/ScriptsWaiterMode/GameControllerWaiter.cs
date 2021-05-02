@@ -205,11 +205,11 @@ public class GameControllerWaiter : MonoBehaviour
         LettucePanelPosition = LettucePanel.transform.position;
 
         IfCheesePlusOnePanel = GameObject.Find("IfCheesePlusOnePanel");
-        IfCheesePlusOnePanel.SetActive(false);
+        //IfCheesePlusOnePanel.SetActive(false);
         IfLettucePlusThreePanel = GameObject.Find("IfLettucePlusThreePanel");
-        IfLettucePlusThreePanel.SetActive(false);
+        //IfLettucePlusThreePanel.SetActive(false);
         IfMeatPlusThreePanel = GameObject.Find("IfMeatPlusThreePanel");
-        IfMeatPlusThreePanel.SetActive(false);
+        //IfMeatPlusThreePanel.SetActive(false);
 
 
         IfCheesePlusOnePanelPosition = IfCheesePlusOnePanel.transform.position;
@@ -217,11 +217,11 @@ public class GameControllerWaiter : MonoBehaviour
         IfMeatPlusThreePanelPosition = IfMeatPlusThreePanel.transform.position;
 
         IfElseCheesePlusOnePanel = GameObject.Find("IfElseCheesePlusOnePanel");
-        IfElseCheesePlusOnePanel.SetActive(false);
+        //IfElseCheesePlusOnePanel.SetActive(false);
         IfElseLettucePlusThreePanel = GameObject.Find("IfElseLettucePlusThreePanel");
-        IfElseLettucePlusThreePanel.SetActive(false);
+        //IfElseLettucePlusThreePanel.SetActive(false);
         IfElseMeatPlusThreePanel = GameObject.Find("IfElseMeatPlusThreePanel");
-        IfElseMeatPlusThreePanel.SetActive(false);
+        //IfElseMeatPlusThreePanel.SetActive(false);
 
         IfElseCheesePlusOnePanelPosition = IfElseCheesePlusOnePanel.transform.position;
         IfElseLettucePlusThreePanelPosition = IfElseLettucePlusThreePanel.transform.position;
@@ -229,7 +229,7 @@ public class GameControllerWaiter : MonoBehaviour
 
 
         ForTwoPanel = GameObject.Find("ForTwoPanel");
-        ForTwoPanel.SetActive(false);
+        //ForTwoPanel.SetActive(false);
         ForTwoPanelPosition = ForTwoPanel.transform.position;
 
         smokeSystem = GameObject.Find("SmokeSystem").GetComponent<ParticleSystem>();
