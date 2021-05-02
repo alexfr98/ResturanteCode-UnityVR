@@ -36,7 +36,7 @@ public class ControllerTutorial : MonoBehaviour
     private ControlCardinalitats controlCardinalities; 
 
     private Subject subject = new Subject();
-    private LogrosController achievementsController;
+    private AchievementsController achievementsController;
     // SINGLETON
     public static ControllerTutorial current;
     private UserController userControl;
@@ -64,7 +64,7 @@ public class ControllerTutorial : MonoBehaviour
         controlCardinalities = new ControlCardinalitats();
         soundControl = GameObject.Find("ControllerSonidos").GetComponent<ControllerSonidos>();
 
-        achievementsController = new LogrosController();
+        achievementsController = new AchievementsController();
         subject.AddObserver(achievementsController);
 
         this.userControl = GameObject.Find("UserControl").GetComponent<UserController>();

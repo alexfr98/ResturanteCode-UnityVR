@@ -50,7 +50,7 @@ public class controladorPartidaChef : MonoBehaviour
     private ControlCardinalitats cardinalitatyController;
 
     private Subject subject = new Subject();
-    private LogrosController achievementsController;
+    private AchievementsController achievementsController;
     // SINGLETON
     public static controladorPartidaChef current;
     private UserController userControl;
@@ -77,7 +77,7 @@ public class controladorPartidaChef : MonoBehaviour
         feedbackGenerator = new FeedbackGenerator();
         orderGenerator = new ComandaContChef();
         cardinalitatyController = new ControlCardinalitats();
-        achievementsController = new LogrosController();
+        achievementsController = new AchievementsController();
         subject.AddObserver(achievementsController);
 
         this.userControl = GameObject.Find("UserControl").GetComponent<UserController>();

@@ -8,9 +8,9 @@ public abstract class Observer
     public abstract void OnNotify(string name);
 }
 
-public class LogrosController : Observer
+public class AchievementsController : Observer
 {
-    public LogrosController()
+    public AchievementsController()
     {
 
 

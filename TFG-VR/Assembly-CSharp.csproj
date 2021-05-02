@@ -407,7 +407,7 @@
     <Compile Include="Assets\Scripts\ScriptsChefMode\FeedbackGenerator.cs" />
     <Compile Include="Assets\Scripts\ScriptsChefMode\FloorScript.cs" />
     <Compile Include="Assets\Scripts\ScriptsChefMode\Hamburguer.cs" />
-    <Compile Include="Assets\Scripts\ScriptsChefMode\Logros\LogrosController.cs" />
+    <Compile Include="Assets\Scripts\ScriptsChefMode\Logros\AchievementsController.cs" />
     <Compile Include="Assets\Scripts\ScriptsChefMode\Logros\Subject.cs" />
     <Compile Include="Assets\Scripts\ScriptsChefMode\ParticleController.cs" />
     <Compile Include="Assets\Scripts\ScriptsChefMode\UpdateCardinalitat.cs" />

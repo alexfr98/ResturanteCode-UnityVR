@@ -15,7 +15,7 @@ public class controladorTutorialWaiter : MonoBehaviour
     private controladorMenusTutorialWaiter controllerMenus;  // Clase controladora de los menús (entrar para ver mayor descripción). 
 
     private Subject subject = new Subject();
-    private LogrosController achievementsController;
+    private AchievementsController achievementsController;
     // SINGLETON
     public static controladorTutorialWaiter current;
     private UserController userControl;
@@ -38,7 +38,7 @@ public class controladorTutorialWaiter : MonoBehaviour
 
         controllerMenus = this.GetComponentInParent<controladorMenusTutorialWaiter>();
 
-        achievementsController = new LogrosController();
+        achievementsController = new AchievementsController();
         subject.AddObserver(achievementsController);
 
         this.userControl = GameObject.Find("UserControl").GetComponent<UserController>();
