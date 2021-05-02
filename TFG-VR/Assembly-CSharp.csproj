@@ -393,7 +393,6 @@
     <Compile Include="Assets\Oculus\Spatializer\scripts\helpers\ONSPReflectionZone.cs" />
     <Compile Include="Assets\Restaurant Interior\Scripts\RotateMoveCamera.cs" />
     <Compile Include="Assets\Scripts\APICommunication.cs" />
-    <Compile Include="Assets\Scripts\AttIngredientsTutorial.cs" />
     <Compile Include="Assets\Scripts\PauseGame.cs" />
     <Compile Include="Assets\Scripts\PositionPlayer.cs" />
     <Compile Include="Assets\Scripts\ScriptsChefMode\AttIngredients.cs" />
@@ -438,6 +437,7 @@
     <Compile Include="Assets\Scripts\ScriptsWaiterMode\UIAnimationsController.cs" />
     <Compile Include="Assets\Scripts\ScriptsWaiterMode\makeOrder.cs" />
     <Compile Include="Assets\Scripts\ScriptsWaiterMode\panelScript.cs" />
+    <Compile Include="Assets\Scripts\Tutorial\AttIngredientsTutorial.cs" />
     <Compile Include="Assets\Scripts\Tutorial\ControllerMenuTutorial.cs" />
     <Compile Include="Assets\Scripts\Tutorial\ControllerSonidos.cs" />
     <Compile Include="Assets\Scripts\Tutorial\ControllerTutorial.cs" />
@@ -446,8 +446,8 @@
     <Compile Include="Assets\Scripts\Tutorial\UpdateCardinalitatsTutorial.cs" />
     <Compile Include="Assets\Scripts\Tutorial\showZoneTutorial.cs" />
     <Compile Include="Assets\Scripts\UndoManager.cs" />
+    <Compile Include="Assets\Scripts\User\AchievementsJSON.cs" />
     <Compile Include="Assets\Scripts\User\DataLevel.cs" />
-    <Compile Include="Assets\Scripts\User\LogrosJSON.cs" />
     <Compile Include="Assets\Scripts\User\UserController.cs" />
     <Compile Include="Assets\Scripts\User\UserJSON.cs" />
     <Compile Include="Assets\Scripts\controladorMenuPrincipal.cs" />
@@ -490,7 +490,7 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeB.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexZoom.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\WarpTextExample.cs" />
-    <Compile Include="Assets\User\LogrosJSON.cs" />
+    <Compile Include="Assets\User\AchievementsJSON.cs" />
     <None Include="Assets\Oculus\SampleFramework\Usage\HandsTrainExample\Shaders\XingLightShader.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
     <None Include="Assets\Oculus\Avatar\Resources\Materials\AvatarMaterialStateShader.cginc" />
