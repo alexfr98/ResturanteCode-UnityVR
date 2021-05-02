@@ -7,18 +7,18 @@ public class JSONReaderWaiter : MonoBehaviour
 {
 
     public TextAsset jsonFileWaiter;
-    private ConjuntComandesWaiter orderInJsonWaiter;
+    private OrderJSONWaiter[] orderInJsonWaiter;
     private ArrayList orderJSONWaiter;
 
     void Start(){
-        this.orderInJsonWaiter = JsonUtility.FromJson<ConjuntComandesWaiter>(jsonFileWaiter.text);
-        var ordersToShow = orderInJsonWaiter.orders.Where((value) => value.level == "1").ToList();
+        this.orderInJsonWaiter = JsonUtility.FromJson<OrderJSONWaiter[]>(jsonFileWaiter.text);
+        var ordersToShow = orderInJsonWaiter.Where((value) => value.level == "1").ToList();
         this.orderJSONWaiter = new ArrayList(ordersToShow);
 
     }
 
 
-    public ArrayList getComandaInJSON(){
+    public ArrayList getOrderInJSON(){
 
         return this.orderJSONWaiter;
         
@@ -28,24 +28,24 @@ public class JSONReaderWaiter : MonoBehaviour
     public void unlockLevel(int level){
 
 
-        var newList = new ArrayList(this.orderInJsonWaiter.orders.Where((value) => value.level == "" + level).ToList());
+        var newList = new ArrayList(this.orderInJsonWaiter.Where((value) => value.level == "" + level).ToList());
         this.orderJSONWaiter.AddRange(newList);
         
     }
 
 
 
-    public ComandaJSONWaiter randomComanda(){
+    public OrderJSONWaiter randomOrder(){
 
         var random = new System.Random();
         var index = random.Next(this.orderJSONWaiter.Count);
-        return this.orderJSONWaiter[index] as ComandaJSONWaiter;
+        return this.orderJSONWaiter[index] as OrderJSONWaiter;
 
     }
 
-    public ComandaJSONWaiter orderTutorial(int i)
+    public OrderJSONWaiter orderTutorial(int i)
     {
-        return this.orderJSONWaiter[i] as ComandaJSONWaiter;
+        return this.orderJSONWaiter[i] as OrderJSONWaiter;
 
     }
 

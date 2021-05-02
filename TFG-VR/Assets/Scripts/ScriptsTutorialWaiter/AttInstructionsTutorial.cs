@@ -7,13 +7,13 @@ using UnityEngine;
 
 public class AttInstructionsTutorial : MonoBehaviour
 {
-    private ComandaWaiter current_hamburguer;
+    private OrderWaiter current_hamburguer;
     private float conditionalSeparationAxisY = 0.18f;
 
     // Start is called before the first frame update
     void Start()
     {
-        current_hamburguer = new ComandaWaiter();
+        current_hamburguer = new OrderWaiter();
 
         //pruebas
     }
@@ -123,7 +123,7 @@ public class AttInstructionsTutorial : MonoBehaviour
         }
     }
 
-    public ComandaWaiter GetHamburguer()
+    public OrderWaiter GetHamburguer()
     {
         return this.current_hamburguer;
     }

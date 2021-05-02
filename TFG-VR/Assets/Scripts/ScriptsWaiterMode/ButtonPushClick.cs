@@ -7,8 +7,8 @@ using UnityEngine.SceneManagement;
 public class ButtonPushClick : MonoBehaviour
 {
     //Probar a hacerlo todo public para poder mirar como va cambiando los valores y comparar con los valores que yo he declarado
-    private float MinLocalY;
-    private float MaxLocalY;
+    private float minLocalY;
+    private float maxLocalY;
 
     private bool isWaiting = false;
     private bool isBeingTouched = false;
@@ -25,12 +25,12 @@ public class ButtonPushClick : MonoBehaviour
     void Start()
     {
 
-        MinLocalY = transform.localPosition.y - 0.04f;
-        MaxLocalY = transform.localPosition.y;
+        minLocalY = transform.localPosition.y - 0.04f;
+        minLocalY = transform.localPosition.y;
 
-        //Start with button up
-        buttonDownPosition = new Vector3(transform.localPosition.x, MinLocalY, transform.localPosition.z);
-        buttonUpPosition = new Vector3(transform.localPosition.x, MaxLocalY, transform.localPosition.z);
+        //Start with button minLocalY
+        buttonDownPosition = new Vector3(transform.localPosition.x, minLocalY, transform.localPosition.z);
+        buttonUpPosition = new Vector3(transform.localPosition.x, minLocalY, transform.localPosition.z);
 
     }
 
@@ -41,14 +41,14 @@ public class ButtonPushClick : MonoBehaviour
         if (!isClicked)
         {
             //Se supone que aquí bloqueamos la altura máxima del botón
-            if(transform.localPosition.y >= MaxLocalY)
+            if(transform.localPosition.y >= maxLocalY)
             {
                 //Volvemos a la posición 
                 transform.localPosition = buttonUpPosition;
             }
 
             //Cuando lleguemos a la posición por debajo de MinLocalY, entregaremos el pedido y bloqueamos el botón en esa posición
-            if(transform.localPosition.y <= MinLocalY)
+            if(transform.localPosition.y <= maxLocalY)
             {
                 isClicked = true;
                 transform.localPosition = buttonDownPosition;
@@ -65,8 +65,8 @@ public class ButtonPushClick : MonoBehaviour
 
 
 
-        ComandaWaiter send_comanda = panel.GetComponent<AttInstructions>().GetHamburguer();
-        controladorPartidaWaiter.current.arriveOrder(send_comanda);
+        OrderWaiter sendOrder = panel.GetComponent<AttInstructions>().GetHamburguer();
+        GameControllerWaiter.current.arriveOrder(sendOrder);
 
         
         //Devolvemos el botón a su lugar inicial 2 segundos más tarde de haberlo pulsado
@@ -90,7 +90,7 @@ public class ButtonPushClick : MonoBehaviour
         }
 
         GetComponent<MeshRenderer>().material = blueMat;
-        transform.localPosition = new Vector3(transform.localPosition.x, MaxLocalY, transform.localPosition.z);
+        transform.localPosition = new Vector3(transform.localPosition.x, maxLocalY, transform.localPosition.z);
         isClicked = false;
     }
 

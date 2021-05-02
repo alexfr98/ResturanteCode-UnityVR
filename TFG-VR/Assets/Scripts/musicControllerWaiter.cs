@@ -24,7 +24,7 @@ public class musicControllerWaiter : MonoBehaviour
     public void OnValueChanged(){
         var sliderActual = GameObject.Find("Slider").GetComponent<Slider>();
         var newValue = sliderActual.value;
-        controladorPartidaWaiter.current.current_user().setVolume(newValue+"");
+        GameControllerWaiter.current.current_user().setVolume(newValue+"");
         this.GetComponentInParent<AudioSource>().volume = newValue;
     }
 }

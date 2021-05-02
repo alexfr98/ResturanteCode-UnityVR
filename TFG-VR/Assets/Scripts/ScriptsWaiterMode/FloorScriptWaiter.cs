@@ -13,7 +13,7 @@ public class FloorScriptWaiter : MonoBehaviour
             {
 
                 Destroy(other.gameObject);
-                controladorPartidaWaiter.current.createPanel(other.name);
+                GameControllerWaiter.current.createPanel(other.name);
             }
         }
     }

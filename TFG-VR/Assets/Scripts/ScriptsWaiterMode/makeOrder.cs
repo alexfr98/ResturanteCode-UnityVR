@@ -36,7 +36,7 @@ public class makeOrder : MonoBehaviour
         if (other.tag == "Player" && !isNearTable)
         {
             isNearTable = true;
-            controladorPartidaWaiter.current.setIsNearTable(isNearTable);
+            GameControllerWaiter.current.setIsNearTable(isNearTable);
 
         }
     }
@@ -46,7 +46,7 @@ public class makeOrder : MonoBehaviour
         if (other.tag == "Player")
         {
             isNearTable = false;
-            controladorPartidaWaiter.current.setIsNearTable(isNearTable);
+            GameControllerWaiter.current.setIsNearTable(isNearTable);
         }
     }
 }

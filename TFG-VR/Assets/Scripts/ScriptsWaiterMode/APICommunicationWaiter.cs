@@ -29,7 +29,7 @@ public class APICommunicationWaiter : MonoBehaviour
     IEnumerator putRequest()
     {
 
-        string jsonData = JsonUtility.ToJson(controladorPartidaWaiter.current.current_user().getCurrentUser());
+        string jsonData = JsonUtility.ToJson(GameControllerWaiter.current.current_user().getCurrentUser());
         //var jsonString = JsonUtility.ToJson(jsonData) ?? "";
 
         //byte[] myData = System.Text.Encoding.UTF8.GetBytes();

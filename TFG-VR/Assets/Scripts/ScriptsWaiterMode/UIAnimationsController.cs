@@ -26,7 +26,7 @@ public class UIAnimationsController : MonoBehaviour
     private Vector3 textClientEnd3;
     private Vector3 textClientEnd4;
     private Vector3 textClientEnd5;
-    private float t;
+    private float movement;
     // Start is called before the first frame update
     void Start()
     {
@@ -55,17 +55,17 @@ public class UIAnimationsController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        t = Mathf.PingPong(Time.time, 1f) / 1f;
+        movement = Mathf.PingPong(Time.time, 1f) / 1f;
         if (arrow.activeSelf)
         {
-            arrow.transform.position = Vector3.Lerp(arrowStart, arrowEnd, t);
+            arrow.transform.position = Vector3.Lerp(arrowStart, arrowEnd, movement);
         }
 
         if (textClient1.activeSelf)
         {
-            if (!controladorPartidaWaiter.current.getIsComandaActive())
+            if (!GameControllerWaiter.current.getIsComandaActive())
             {
-                textClient1.transform.position = Vector3.Lerp(textClientStart1, textClientEnd1, t);
+                textClient1.transform.position = Vector3.Lerp(textClientStart1, textClientEnd1, movement);
                 textClient1.transform.rotation = Quaternion.Euler(player.transform.rotation.eulerAngles.x, player.transform.rotation.eulerAngles.y, player.transform.rotation.eulerAngles.z);
             }
 
@@ -80,9 +80,9 @@ public class UIAnimationsController : MonoBehaviour
 
         else if (textClient2.activeSelf)
         {
-            if (!controladorPartidaWaiter.current.getIsComandaActive())
+            if (!GameControllerWaiter.current.getIsComandaActive())
             {
-                textClient2.transform.position = Vector3.Lerp(textClientStart2, textClientEnd2, t);
+                textClient2.transform.position = Vector3.Lerp(textClientStart2, textClientEnd2, movement);
                 textClient2.transform.rotation = Quaternion.Euler(player.transform.rotation.eulerAngles.x, player.transform.rotation.eulerAngles.y, player.transform.rotation.eulerAngles.z);
             }
             else
@@ -93,9 +93,9 @@ public class UIAnimationsController : MonoBehaviour
 
         else if (textClient3.activeSelf)
         {
-            if (!controladorPartidaWaiter.current.getIsComandaActive())
+            if (!GameControllerWaiter.current.getIsComandaActive())
             {
-                textClient3.transform.position = Vector3.Lerp(textClientStart3, textClientEnd3, t);
+                textClient3.transform.position = Vector3.Lerp(textClientStart3, textClientEnd3, movement);
                 textClient3.transform.rotation = Quaternion.Euler(player.transform.rotation.eulerAngles.x, player.transform.rotation.eulerAngles.y, player.transform.rotation.eulerAngles.z);
             }
             else
@@ -106,9 +106,9 @@ public class UIAnimationsController : MonoBehaviour
 
         else if (textClient4.activeSelf)
         {
-            if (!controladorPartidaWaiter.current.getIsComandaActive())
+            if (!GameControllerWaiter.current.getIsComandaActive())
             {
-                textClient4.transform.position = Vector3.Lerp(textClientStart4, textClientEnd4, t);
+                textClient4.transform.position = Vector3.Lerp(textClientStart4, textClientEnd4, movement);
                 textClient4.transform.rotation = Quaternion.Euler(player.transform.rotation.eulerAngles.x, player.transform.rotation.eulerAngles.y, player.transform.rotation.eulerAngles.z);
             }
             else
@@ -119,9 +119,9 @@ public class UIAnimationsController : MonoBehaviour
 
         else if (textClient5.activeSelf)
         {
-            if (!controladorPartidaWaiter.current.getIsComandaActive())
+            if (!GameControllerWaiter.current.getIsComandaActive())
             {
-                textClient5.transform.position = Vector3.Lerp(textClientStart5, textClientEnd5, t);
+                textClient5.transform.position = Vector3.Lerp(textClientStart5, textClientEnd5, movement);
                 textClient5.transform.rotation = Quaternion.Euler(player.transform.rotation.eulerAngles.x, player.transform.rotation.eulerAngles.y, player.transform.rotation.eulerAngles.z);
             }
             else

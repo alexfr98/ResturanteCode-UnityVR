@@ -5,18 +5,16 @@ using UnityEngine;
 
 public class FeedbackGeneratorWaiter : MonoBehaviour
 {
-    private ComandaJSONWaiter comanda_actual;
-    private GameObject textClient;
+    private OrderJSONWaiter actualOrder;
     private void Start()
     {
-        textClient = GameObject.Find("TextClient");
     }
-    public (string, float, bool) getFeedback(ComandaWaiter comanda, float temps)
+    public (string, float, bool) getFeedback(OrderWaiter order, float time)
     {
 
 
-        ArrayList instructions = comanda.getInstructions();
-        ArrayList instructions_screen = new ArrayList(comanda_actual.instructions);
+        ArrayList instructions = order.getInstructions();
+        ArrayList instructions_screen = new ArrayList(actualOrder.instructions);
 
         string result_str;
 
@@ -51,11 +49,11 @@ public class FeedbackGeneratorWaiter : MonoBehaviour
         }
         if (result && index > 0)
         {
-            if (temps > 20f)
+            if (time > 20f)
             {
                 exp = 25;
             }
-            else if (temps < 20f)
+            else if (time < 20f)
             {
                 exp = 100;
             }
@@ -71,10 +69,10 @@ public class FeedbackGeneratorWaiter : MonoBehaviour
 
 
 
-    public void setComandaActual(ComandaJSONWaiter comanda)
+    public void setComandaActual(OrderJSONWaiter comanda)
     {
 
-        comanda_actual = comanda;
+        actualOrder = comanda;
           
     }
 }
