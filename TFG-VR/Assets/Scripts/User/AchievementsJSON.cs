@@ -11,17 +11,20 @@ public class AchievementsJSON
     public bool tenOrdersChef;
     public bool twentyfiveOrdersChef;
     public bool fiftyOrdersChef;
-    public bool seventyfiveOrdersChef;
     public bool hundredOrdersChef;
 
     public bool firstBasicOrderChef;
     public bool tenBasicOrdersChef;
     public bool twentyfiveBasicOrdersChef;
-    public bool fourtyBasicOrdersChef;
+    public bool fiftyBasicOrdersChef;
+
+    public bool firstIterativeOrderChef;
+    public bool tenIterativeOrdersChef;
+    public bool thirtyIterativeOrdersChef;
 
     public bool firstConditionalOrderChef;
     public bool tenConditionalOrdersChef;
-    public bool thirtyConditionalOrdersChef;
+    public bool twentyfiveConditionalOrdersChef;
     public bool fiftyConditionalOrdersChef;
 
     public bool firstConditionalIfOrderChef;
@@ -32,21 +35,16 @@ public class AchievementsJSON
     public bool tenConditionalIfElseOrdersChef;
     public bool thirtyConditionalIfElseOrdersChef;
 
-    public bool firstIterativeOrderChef;
-    public bool tenIterativeOrdersChef;
-    public bool thirtyIterativeOrdersChef;
-
     public bool firstOrderWaiter;
     public bool tenOrdersWaiter;
     public bool twentyfiveOrdersWaiter;
     public bool fiftyOrdersWaiter;
-    public bool seventyfiveOrdersWaiter;
     public bool hundredOrdersWaiter;
 
     public bool firstBasicOrderWaiter;
     public bool tenBasicOrdersWaiter;
     public bool twentyfiveBasicOrdersWaiter;
-    public bool fourtyBasicOrdersWaiter;
+    public bool fiftyBasicOrdersWaiter;
 
     public bool firstConditionalOrderWaiter;
     public bool tenConditionalOrdersWaiter;

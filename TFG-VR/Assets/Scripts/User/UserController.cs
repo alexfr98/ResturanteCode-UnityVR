@@ -154,10 +154,6 @@ public class UserController : MonoBehaviour
     {
         return this.currentUser.achievements.fiftyOrdersChef;
     }
-    public bool getSeventyfiveOrdersChefAchievement()
-    {
-        return this.currentUser.achievements.seventyfiveOrdersChef;
-    }
     public bool getHundredOrdersChefAchievement()
     {
         return this.currentUser.achievements.hundredOrdersChef;
@@ -176,11 +172,6 @@ public class UserController : MonoBehaviour
     {
         return this.currentUser.achievements.twentyfiveBasicOrdersChef;
     }
-    public bool getFourtyBasicOrdersChefAchievement()
-    {
-        return this.currentUser.achievements.fourtyBasicOrdersChef;
-    }
-
     //Getters ITERATIVE orders achievements - Chef
     public bool getFirstIterativeOrderChefAchievement(){
         return this.currentUser.achievements.firstIterativeOrderChef;
@@ -201,10 +192,7 @@ public class UserController : MonoBehaviour
     {
         return this.currentUser.achievements.tenConditionalOrdersChef;
     }
-    public bool getThirtyConditionalOrdersChefAchievement()
-    {
-        return this.currentUser.achievements.thirtyConditionalOrdersChef;
-    }
+
     public bool getFiftyConditionalOrdersChefAchievement()
     {
         return this.currentUser.achievements.fiftyConditionalOrdersChef;
@@ -251,10 +239,6 @@ public class UserController : MonoBehaviour
         this.currentUser.achievements.fiftyOrdersChef = unlock;
     }
 
-    public void setSeventyfiveOrdersChefAchievement(bool unlock)
-    {
-        this.currentUser.achievements.seventyfiveOrdersChef = unlock;
-    }
     public void setHundredOrdersChefAchievement(bool unlock)
     {
         this.currentUser.achievements.hundredOrdersChef = unlock;
@@ -273,10 +257,6 @@ public class UserController : MonoBehaviour
     public void setTwentyfiveBasicOrdersChefAchievement(bool unlock)
     {
         this.currentUser.achievements.twentyfiveBasicOrdersChef = unlock;
-    }
-    public void setFourtyBasicOrdersChefAchievement(bool unlock)
-    {
-        this.currentUser.achievements.fourtyBasicOrdersChef = unlock;
     }
     //Setters iterative orders achievements  - Chef
     public void setFirstIterativeOrderChefAchievement(bool unlock){
@@ -297,10 +277,6 @@ public class UserController : MonoBehaviour
     public void setTenConditionalOrdersChefAchievement(bool unlock)
     {
         this.currentUser.achievements.tenConditionalOrdersChef = unlock;
-    }
-    public void setThirtyConditionalOrdersChefAchievement(bool unlock)
-    {
-        this.currentUser.achievements.thirtyConditionalOrdersChef = unlock;
     }
     public void setFiftyConditionalOrdersChefAchievement(bool unlock)
     {
@@ -401,10 +377,6 @@ public class UserController : MonoBehaviour
     {
         return this.currentUser.achievements.fiftyOrdersWaiter;
     }
-    public bool getSeventyfiveOrdersWaiterAchievement()
-    {
-        return this.currentUser.achievements.seventyfiveOrdersWaiter;
-    }
     public bool getHundredOrdersWaiterAchievement()
     {
         return this.currentUser.achievements.hundredOrdersWaiter;
@@ -422,11 +394,6 @@ public class UserController : MonoBehaviour
     public bool getTwentyfiveBasicOrdersWaiterAchievement()
     {
         return this.currentUser.achievements.twentyfiveBasicOrdersWaiter;
-    }
-
-    public bool getFourtyBasicOrdersWaiterAchievement()
-    {
-        return this.currentUser.achievements.fourtyBasicOrdersWaiter;
     }
 
     //Getters ITERATIVE orders achievements - Waiter 
@@ -506,10 +473,6 @@ public class UserController : MonoBehaviour
     {
         this.currentUser.achievements.fiftyOrdersWaiter = unlock;
     }
-    public void setSeventyfiveOrdersWaiterAchievement(bool unlock)
-    {
-        this.currentUser.achievements.seventyfiveOrdersWaiter = unlock;
-    }
     public void setHundredOrdersWaiterAchievement(bool unlock)
     {
         this.currentUser.achievements.hundredOrdersWaiter = unlock;
@@ -528,11 +491,6 @@ public class UserController : MonoBehaviour
     {
         this.currentUser.achievements.twentyfiveBasicOrdersWaiter = unlock;
     }
-    public void setFourtyBasicOrdersWaiterAchievement(bool unlock)
-    {
-        this.currentUser.achievements.fourtyBasicOrdersWaiter = unlock;
-    }
-
 
     //Setters iterative orders achievements - Waiter
     public void setFirstIterativeOrderWaiterAchievement(bool unlock)
