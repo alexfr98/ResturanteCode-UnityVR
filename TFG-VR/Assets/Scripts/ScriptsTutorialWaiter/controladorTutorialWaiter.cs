@@ -87,7 +87,7 @@ public class controladorTutorialWaiter : MonoBehaviour
 
             else if(iterTutorial == 1)
             {
-                controllerMenus.setText("Or you also can use teleport mode. This mode reduce dizzinees. If you are not used to play VR games, we recommend this one. Maintain press the trigger indicated in the image and select where do you want to go. After that, let it go!");
+                controllerMenus.setText("Or you also can use teleport mode. This mode reduce dizzinees. If you are not used to play VR games, we recommend this one. Maintain pressed press the trigger and let it go!");
                 controllerMenus.showImage("TeleportTrigger");
                 iterTutorial++;
             }

@@ -6134,6 +6134,10 @@ PrefabInstance:
       value: Floor (1)
       objectReference: {fileID: 0}
     - target: {fileID: 1573022518802554, guid: 1bb4d1dd291fe124b8e52337f989b3e3, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1573022518802554, guid: 1bb4d1dd291fe124b8e52337f989b3e3, type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
@@ -8727,8 +8731,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 9.701277e-12, y: -0.0762}
-  m_SizeDelta: {x: 1.3, y: 0.6663737}
+  m_AnchoredPosition: {x: 9.701277e-12, y: -0.081}
+  m_SizeDelta: {x: 1.3, y: 0.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1180008583
 MonoBehaviour:
@@ -11442,15 +11446,15 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1549930582}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.02}
-  m_LocalScale: {x: 1.6666703, y: 1.66667, z: 1.6666702}
+  m_LocalPosition: {x: 0, y: 0, z: -0}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
   m_Children: []
   m_Father: {fileID: 1097885492}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 1.652, y: -0.502}
+  m_AnchoredPosition: {x: 1.657, y: -0.502}
   m_SizeDelta: {x: -1.3105017, y: -0.75739866}
   m_Pivot: {x: -0.97885823, y: 0.70820725}
 --- !u!114 &1549930584
