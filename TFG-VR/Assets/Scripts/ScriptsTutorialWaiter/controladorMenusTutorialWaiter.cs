@@ -27,6 +27,9 @@ public class controladorMenusTutorialWaiter : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        image = GameObject.Find("ImageTutorial");
+        image.SetActive(false);
+
         savedText = GameObject.Find("SavingGameTextTutorial");
         pauseMenu = GameObject.Find("PauseMenuWaiterTutorial");
         pauseMenu.SetActive(false);
@@ -34,9 +37,6 @@ public class controladorMenusTutorialWaiter : MonoBehaviour
         achievementsMenu.SetActive(false);
 
         textScreenWaiter = GameObject.Find("messageTextWaiterTutorial");
-
-        image = GameObject.Find("ImageTutorial");
-        image.SetActive(false);
 
         continueText = GameObject.Find("ContinueTextTutorial");
         btnA = GameObject.Find("BtnATutorial");
