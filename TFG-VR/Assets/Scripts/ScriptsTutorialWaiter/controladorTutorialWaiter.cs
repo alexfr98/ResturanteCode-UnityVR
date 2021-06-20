@@ -109,6 +109,7 @@ public class controladorTutorialWaiter : MonoBehaviour
 
             else if (iterTutorial == 10)
             {
+                userControl.tutorialWaiterCompleted();
                 DontDestroyOnLoad(GameObject.Find("UserControl"));
                 SceneManager.LoadScene("WaiterScene");
             }

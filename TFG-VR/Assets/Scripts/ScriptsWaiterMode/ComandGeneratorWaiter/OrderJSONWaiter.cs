@@ -10,7 +10,6 @@ public class OrderJSONWaiter
 {
     public string level;
     public string type;
-    public string img;
     public string sentence;
     public string [] instructions;
     

@@ -566,7 +566,7 @@ public class UserController : MonoBehaviour
 
     public void setDataCollection(string data)
     {
-        this.currentUser.dataCollection = this.getDataCollection() + Environment.NewLine +  data;
+        this.currentUser.dataCollection = data;
     }
 
 

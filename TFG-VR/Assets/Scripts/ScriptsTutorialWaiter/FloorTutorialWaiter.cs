@@ -9,7 +9,7 @@ public class FloorTutorialWaiter : MonoBehaviour
     {
         if (other.tag == "panel")
         {
-            if (!other.GetComponent<OVRGrabbable>().isGrabbed)
+            if (!other.GetComponent<OVRGrabbable>().isGrabbed && controladorTutorialWaiter.current.getIterTutorial()>9)
             {
 
                 Destroy(other.gameObject);

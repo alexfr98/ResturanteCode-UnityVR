@@ -45,6 +45,7 @@ public class MenusControllerWaiter : MonoBehaviour
 
         tutorialText = GameObject.Find("CanvasTextStart");
         buttonText = GameObject.Find("ButtonText");
+        buttonText.SetActive(false);
     }
 
 
@@ -257,7 +258,7 @@ public class MenusControllerWaiter : MonoBehaviour
         else
         {
             imageBig.SetActive(booleano);
-            myImg = Resources.Load<Sprite>("Sprites/images/" +textImage);
+            myImg = Resources.Load<Sprite>("Panels/images/" +textImage);
             imageBig.GetComponent<Image>().sprite = myImg;
         }
 
@@ -271,7 +272,7 @@ public class MenusControllerWaiter : MonoBehaviour
         else
         {
             imageSmall.SetActive(booleano);
-            myImg = Resources.Load<Sprite>("Sprites/images/" + textImage);
+            myImg = Resources.Load<Sprite>("Panels/images/" + textImage);
             imageSmall.GetComponent<Image>().sprite = myImg;
         }
 

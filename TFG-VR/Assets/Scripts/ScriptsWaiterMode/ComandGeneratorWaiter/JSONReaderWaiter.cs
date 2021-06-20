@@ -2,19 +2,18 @@
 using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
+using TMPro;
 
 public class JSONReaderWaiter : MonoBehaviour
 {
 
     public TextAsset jsonFileWaiter;
-    private OrderJSONWaiter[] orderInJsonWaiter;
+    private OrderSetWaiter orderInJsonWaiter;
     private ArrayList orderJSONWaiter;
-
     void Start(){
-        this.orderInJsonWaiter = JsonUtility.FromJson<OrderJSONWaiter[]>(jsonFileWaiter.text);
-        var ordersToShow = orderInJsonWaiter.Where((value) => value.level == "1").ToList();
-        this.orderJSONWaiter = new ArrayList(ordersToShow);
-
+        this.orderInJsonWaiter = JsonUtility.FromJson<OrderSetWaiter>(jsonFileWaiter.text);
+        var ordersToShow = orderInJsonWaiter.orders.Where((value) => value.level == "1").ToList();
+        this.orderJSONWaiter = new ArrayList(ordersToShow.ToList());
     }
 
 
@@ -28,7 +27,7 @@ public class JSONReaderWaiter : MonoBehaviour
     public void unlockLevel(int level){
 
 
-        var newList = new ArrayList(this.orderInJsonWaiter.Where((value) => value.level == "" + level).ToList());
+        var newList = new ArrayList(this.orderInJsonWaiter.orders.Where((value) => value.level == "" + level).ToList());
         this.orderJSONWaiter.AddRange(newList);
         
     }

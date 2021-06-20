@@ -26,11 +26,11 @@ public class ButtonPushClick : MonoBehaviour
     {
 
         minLocalY = transform.localPosition.y - 0.04f;
-        minLocalY = transform.localPosition.y;
+        maxLocalY = transform.localPosition.y;
 
         //Start with button minLocalY
         buttonDownPosition = new Vector3(transform.localPosition.x, minLocalY, transform.localPosition.z);
-        buttonUpPosition = new Vector3(transform.localPosition.x, minLocalY, transform.localPosition.z);
+        buttonUpPosition = new Vector3(transform.localPosition.x, maxLocalY, transform.localPosition.z);
 
     }
 
@@ -48,7 +48,7 @@ public class ButtonPushClick : MonoBehaviour
             }
 
             //Cuando lleguemos a la posición por debajo de MinLocalY, entregaremos el pedido y bloqueamos el botón en esa posición
-            if(transform.localPosition.y <= maxLocalY)
+            if(transform.localPosition.y <= minLocalY)
             {
                 isClicked = true;
                 transform.localPosition = buttonDownPosition;

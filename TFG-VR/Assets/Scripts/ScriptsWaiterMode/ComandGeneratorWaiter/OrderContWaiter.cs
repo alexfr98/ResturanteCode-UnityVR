@@ -1,16 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class OrderContWaiter:MonoBehaviour
 {
     private OrderJSONWaiter actualOrder;
     private JSONReaderWaiter ordersJson;
-  
     public OrderContWaiter()
     {
-            ordersJson = GameObject.Find("ControllerPartidaWaiter").GetComponent<JSONReaderWaiter>();
-        
+        ordersJson = GameObject.Find("ControllerPartidaWaiter").GetComponent<JSONReaderWaiter>();      
    }
 
     public void generateOrder()

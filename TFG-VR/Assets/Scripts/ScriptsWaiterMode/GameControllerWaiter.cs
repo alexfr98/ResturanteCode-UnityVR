@@ -126,11 +126,10 @@ public class GameControllerWaiter : MonoBehaviour
     // Inicializamos todas las clases y los diferentes gameobjects que tengamos. 
     private void Start()
     {
-
         //Si es nuestro primer día, activamos el texto que nos guiará durante el primer pedido
         arrowPointer = GameObject.Find("Arrow");
         arrowPointer.SetActive(false);
- 
+
         hatTv = GameObject.Find("hatTV");
         ButtonSoundCorrect = Resources.Load<AudioClip>("Audio/AplauseAudio");
         ButtonSoundIncorrect = Resources.Load<AudioClip>("Audio/ErrorAudio");
@@ -205,11 +204,11 @@ public class GameControllerWaiter : MonoBehaviour
         LettucePanelPosition = LettucePanel.transform.position;
 
         IfCheesePlusOnePanel = GameObject.Find("IfCheesePlusOnePanel");
-        //IfCheesePlusOnePanel.SetActive(false);
+        IfCheesePlusOnePanel.SetActive(false);
         IfLettucePlusThreePanel = GameObject.Find("IfLettucePlusThreePanel");
-        //IfLettucePlusThreePanel.SetActive(false);
+        IfLettucePlusThreePanel.SetActive(false);
         IfMeatPlusThreePanel = GameObject.Find("IfMeatPlusThreePanel");
-        //IfMeatPlusThreePanel.SetActive(false);
+        IfMeatPlusThreePanel.SetActive(false);
 
 
         IfCheesePlusOnePanelPosition = IfCheesePlusOnePanel.transform.position;
@@ -217,11 +216,11 @@ public class GameControllerWaiter : MonoBehaviour
         IfMeatPlusThreePanelPosition = IfMeatPlusThreePanel.transform.position;
 
         IfElseCheesePlusOnePanel = GameObject.Find("IfElseCheesePlusOnePanel");
-        //IfElseCheesePlusOnePanel.SetActive(false);
+        IfElseCheesePlusOnePanel.SetActive(false);
         IfElseLettucePlusThreePanel = GameObject.Find("IfElseLettucePlusThreePanel");
-        //IfElseLettucePlusThreePanel.SetActive(false);
+        IfElseLettucePlusThreePanel.SetActive(false);
         IfElseMeatPlusThreePanel = GameObject.Find("IfElseMeatPlusThreePanel");
-        //IfElseMeatPlusThreePanel.SetActive(false);
+        IfElseMeatPlusThreePanel.SetActive(false);
 
         IfElseCheesePlusOnePanelPosition = IfElseCheesePlusOnePanel.transform.position;
         IfElseLettucePlusThreePanelPosition = IfElseLettucePlusThreePanel.transform.position;
@@ -229,20 +228,20 @@ public class GameControllerWaiter : MonoBehaviour
 
 
         ForTwoPanel = GameObject.Find("ForTwoPanel");
-        //ForTwoPanel.SetActive(false);
+        ForTwoPanel.SetActive(false);
         ForTwoPanelPosition = ForTwoPanel.transform.position;
 
         smokeSystem = GameObject.Find("SmokeSystem").GetComponent<ParticleSystem>();
         smokeSystem.Stop();
 
-
-        if (userControl.getCurrentDay() == 0)
+        
+        if (userControl.getWaiterLevel() == 1)
         {
             controllerMenus.activeTutorialText(true);
             controllerMenus.activeButtonText(true);
         }
 
-        if(userControl.getWaiterLevel() == 2)
+        else if(userControl.getWaiterLevel() == 2)
         {
             LettucePanel.SetActive(true);
             orderGenerator.unlocklevels(2);
@@ -341,11 +340,7 @@ public class GameControllerWaiter : MonoBehaviour
                     textsClient[randomIndex].GetComponent<TextMeshProUGUI>().fontSize = 0.15f;
                     tables[randomIndex].GetComponent<BoxCollider>().enabled = true;
                     isTableChoosed = true;
-
-                    if(userControl.getCurrentDay() == 0)
-                    {
-                        controllerMenus.activeTutorialText(false);
-                    }
+                    controllerMenus.activeTutorialText(false);
 
                 }
 
@@ -357,6 +352,10 @@ public class GameControllerWaiter : MonoBehaviour
         {
 
             AudioSource.PlayClipAtPoint(Resources.Load<AudioClip>("Audio/orderSound"), player.transform.position, 1.0f);
+            if (userControl.getCurrentDay() == 1)
+            {
+                arrowPointer.SetActive(true);
+            }
             orderGenerator.generateOrder();
             textsClient[randomIndex].GetComponent<TextMeshProUGUI>().fontSize = 0.08f;
             textsClient[randomIndex].GetComponent<TextMeshProUGUI>().SetText(orderGenerator.getActualOrder().sentence);
@@ -364,10 +363,6 @@ public class GameControllerWaiter : MonoBehaviour
             tables[randomIndex].GetComponent<BoxCollider>().enabled = false;
             isComandaActive = true;
             isNearTable = false;
-            if (userControl.getCurrentDay() == 0)
-            {
-                arrowPointer.SetActive(true);
-            }
 
         }
 
@@ -393,7 +388,7 @@ public class GameControllerWaiter : MonoBehaviour
             controllerMenus.menuStartOfTheDayUnlockedCondicionalsIf(currentDay);
             //Activamos los paneles condicionales
             unlockConditionalsIf();
-            controllerMenus.showImageBig(true, "CheesePlusOne");
+            controllerMenus.showImageBig(true, "CheeseHigherOne");
             isJustUnlockedLevel3 = false;
             isEndOfTheDay = false;
 
@@ -404,7 +399,7 @@ public class GameControllerWaiter : MonoBehaviour
             controllerMenus.menuStartOfTheDayUnlockedCondicionalsIfElse(currentDay);
             //Activamos los paneles condicionales
             unlockConditionalsIfElse();
-            controllerMenus.showImageBig(true, "ComandaIF1Text");
+            controllerMenus.showImageBig(true, "BasicIf1");
             isJustUnlockedLevel4 = false;
             isEndOfTheDay = false;
 
@@ -415,7 +410,7 @@ public class GameControllerWaiter : MonoBehaviour
 
             //Desbloqueamos los paneles iterativos
             unlockIteratives();
-            controllerMenus.showImageSmall(true, "ComandaForText");
+            controllerMenus.showImageSmall(true, "ForOrder0");
             isJustUnlockedLevel5 = false;
             isEndOfTheDay = false;
 

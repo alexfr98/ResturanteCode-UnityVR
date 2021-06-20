@@ -490,7 +490,6 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeB.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexZoom.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\WarpTextExample.cs" />
-    <Compile Include="Assets\User\AchievementsJSON.cs" />
     <None Include="Assets\Oculus\SampleFramework\Usage\HandsTrainExample\Shaders\XingLightShader.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
     <None Include="Assets\Oculus\Avatar\Resources\Materials\AvatarMaterialStateShader.cginc" />
@@ -1072,37 +1071,37 @@
       <HintPath>D:/Unity/2019.4.22f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.Serialization.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline.Editor">
-      <HintPath>C:/Users/alexf/Documents/FDP/TFG-VR-Unity/TFG-VR/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+      <HintPath>C:/Users/alexf/Documents/FDP/TFG-VR-Unity_aux/TFG-VR-Unity/TFG-VR/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Subsystem.Registration">
-      <HintPath>C:/Users/alexf/Documents/FDP/TFG-VR-Unity/TFG-VR/Library/ScriptAssemblies/Unity.Subsystem.Registration.dll</HintPath>
+      <HintPath>C:/Users/alexf/Documents/FDP/TFG-VR-Unity_aux/TFG-VR-Unity/TFG-VR/Library/ScriptAssemblies/Unity.Subsystem.Registration.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
-      <HintPath>C:/Users/alexf/Documents/FDP/TFG-VR-Unity/TFG-VR/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+      <HintPath>C:/Users/alexf/Documents/FDP/TFG-VR-Unity_aux/TFG-VR-Unity/TFG-VR/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.XR.InteractionSubsystems">
-      <HintPath>C:/Users/alexf/Documents/FDP/TFG-VR-Unity/TFG-VR/Library/ScriptAssemblies/Unity.XR.InteractionSubsystems.dll</HintPath>
+      <HintPath>C:/Users/alexf/Documents/FDP/TFG-VR-Unity_aux/TFG-VR-Unity/TFG-VR/Library/ScriptAssemblies/Unity.XR.InteractionSubsystems.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>C:/Users/alexf/Documents/FDP/TFG-VR-Unity/TFG-VR/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>C:/Users/alexf/Documents/FDP/TFG-VR-Unity_aux/TFG-VR-Unity/TFG-VR/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>C:/Users/alexf/Documents/FDP/TFG-VR-Unity/TFG-VR/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+      <HintPath>C:/Users/alexf/Documents/FDP/TFG-VR-Unity_aux/TFG-VR-Unity/TFG-VR/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-      <HintPath>C:/Users/alexf/Documents/FDP/TFG-VR-Unity/TFG-VR/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+      <HintPath>C:/Users/alexf/Documents/FDP/TFG-VR-Unity_aux/TFG-VR-Unity/TFG-VR/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>C:/Users/alexf/Documents/FDP/TFG-VR-Unity/TFG-VR/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>C:/Users/alexf/Documents/FDP/TFG-VR-Unity_aux/TFG-VR-Unity/TFG-VR/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-      <HintPath>C:/Users/alexf/Documents/FDP/TFG-VR-Unity/TFG-VR/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+      <HintPath>C:/Users/alexf/Documents/FDP/TFG-VR-Unity_aux/TFG-VR-Unity/TFG-VR/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>C:/Users/alexf/Documents/FDP/TFG-VR-Unity/TFG-VR/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>C:/Users/alexf/Documents/FDP/TFG-VR-Unity_aux/TFG-VR-Unity/TFG-VR/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-      <HintPath>C:/Users/alexf/Documents/FDP/TFG-VR-Unity/TFG-VR/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+      <HintPath>C:/Users/alexf/Documents/FDP/TFG-VR-Unity_aux/TFG-VR-Unity/TFG-VR/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
