@@ -1,2 +1,2 @@
 # TFG-VR-Unity
-Unity part of my Final Degree Project
+Degree Final Project Unity Part
