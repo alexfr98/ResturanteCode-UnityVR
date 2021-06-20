@@ -403,6 +403,7 @@ public class GameControllerWaiter : MonoBehaviour
             isJustUnlockedLevel4 = false;
             isEndOfTheDay = false;
 
+
         }
         else if (isJustUnlockedLevel5)
         {
